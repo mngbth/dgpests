@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D7G Pest Control — Maldives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green-1:#0f5132; /* deep */
+      --green-2:#2ca06c; /* primary */
+      --green-3:#c9f7e1; /* light */
+      --accent:#f6b042; /* warm accent */
+      --muted:#6b7276;
+      --glass: rgba(255,255,255,0.08);
+      --card: rgba(255,255,255,0.03);
+      --max-width:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--green-3),#ffffff);color:#043027}
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px;width:56px;object-fit:contain;border-radius:8px}
+    .brand h1{font-size:20px;margin:0;font-weight:700;color:var(--green-1)}
+    nav{display:flex;gap:12px}
+    nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--green-1);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;background-image:linear-gradient(rgba(4,48,36,0.25), rgba(4,48,36,0.25)), url('hero.jpg');background-size:cover;background-position:center;border-radius:14px;padding:48px 28px;color:white;box-shadow:0 10px 30px rgba(4,48,36,0.12)}
+    .hero-inner{max-width:720px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);padding:6px 10px;border-radius:999px;font-weight:600}
+    h2{margin:12px 0 6px;font-size:34px;line-height:1.05}
+    p.lead{margin:0 0 18px;color:rgba(255,255,255,0.92);font-size:16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--green-2);color:white;padding:12px 18px;border-radius:10px;border:none;font-weight:700;text-decoration:none;display:inline-block}
+    .btn.secondary{background:transparent;color:white;border:2px solid rgba(255,255,255,0.16)}
+
+    main{margin-top:24px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(1,1fr)}.hero{padding:28px}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.9),white);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(3,61,41,0.06)}
+    .card h3{margin:0 0 8px;color:var(--green-1)}
+    .card ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--green-3),transparent);margin:30px 0;border-radius:2px}
+
+    .features{display:flex;gap:14px;flex-direction:column}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .icon{flex:0 0 44px;height:44px;border-radius:8px;background:var(--card);display:grid;place-items:center}
+    .icon svg{width:24px;height:24px;fill:var(--green-2)}
+    .feature p{margin:0}
+
+    .cta-block{background:linear-gradient(90deg,var(--green-3),#e7fff3);padding:20px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .contact{display:flex;flex-direction:column;gap:8px}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    form input, form textarea{padding:10px;border-radius:8px;border:1px solid #dfeee0}
+    form textarea{grid-column:1/3;min-height:100px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:34px;padding:18px 0;text-align:center;color:var(--muted)}
+
+    /* little pest badge */
+    .badge{display:inline-flex;gap:8px;align-items:center;background:linear-gradient(90deg,var(--green-1),var(--green-2));color:white;padding:6px 10px;border-radius:999px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="D7G Pest Control logo">
+        <div>
+          <h1>D7G Pest Control</h1>
+          <div class="small">Trusted. Safe. Local.</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#residential">Residential</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#eco">Eco Services</a>
+        <a href="#contact" class="badge">Get a Quote</a>
+      </nav>
+    </header>
+
+    <section class="hero" role="banner" aria-label="Hero section">
+      <div class="hero-inner">
+        <div class="eyebrow">Maldives • Fast Response</div>
+        <h2>Residential & Commercial Pest Control — Safe, Effective, Locally Trusted</h2>
+        <p class="lead">D7G Pest Control protects homes, resorts and businesses with modern integrated pest management (IPM) and eco-friendly options. Proudly serving local communities and guesthouses across the Maldives.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn">Request a Free Quote</a>
+          <a href="#services" class="btn secondary">See Services</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div style="display:flex;gap:18px;flex-direction:column;margin-top:18px">
+        <section id="services" class="grid">
+
+          <article class="card">
+            <h3 id="residential">Residential Pest Control</h3>
+            <p class="small">Complete solutions for homes, apartments and small guesthouses — quick, discreet, and family-safe.</p>
+            <ul>
+              <li>General pest treatment (cockroaches, ants, spiders, mosquitoes, fleas)</li>
+              <li>Bed bug inspection & targeted treatment (tropical-ready)</li>
+              <li>Termite control — pre & post-construction protection</li>
+              <li>Rodent control (rats & mice) with prevention advice</li>
+              <li>Mosquito fogging / misting for outdoor living areas</li>
+              <li>Garden & landscaping pest care (ants, aphids)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 id="commercial">Commercial & Resort Pest Control</h3>
+            <p class="small">Custom programs for hotels, restaurants, warehouses and resorts — keeping guests safe and reviews glowing.</p>
+            <ul>
+              <li>Hotel / resort pest management programs (monthly or quarterly)</li>
+              <li>Restaurant & kitchen pest control (flies, cockroaches, rodents)</li>
+              <li>Warehouse, storage & linen protection</li>
+              <li>Mosquito & sandfly control for outdoor dining and pool areas</li>
+              <li>Bird control (near dining, storage, and pool areas)</li>
+              <li>Disinfection & sanitation after pest removal</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 id="eco">Eco-Friendly & Specialized Services</h3>
+            <p class="small">Sensible, low-impact solutions that protect people and the environment while solving pest problems.</p>
+            <ul>
+              <li>Eco-friendly / chemical-minimal treatments using safe products</li>
+              <li>Integrated Pest Management (IPM): inspection, monitoring & prevention</li>
+              <li>Termite monitoring systems & baiting programs</li>
+              <li>Fogging & fumigation for imports, ships, and containers</li>
+              <li>Specialized treatments for sensitive areas (kitchens, nurseries, resorts)</li>
+            </ul>
+          </article>
+
+        </section>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="card">
+          <h3>Why choose D7G?</h3>
+          <div class="features">
+            <div class="feature">
+              <div class="icon" aria-hidden>
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 3.9 3.1 7 7 7s7-3.1 7-7c0-3.9-3.1-7-7-7zm0 12c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"></path></svg>
+              </div>
+              <div>
+                <strong>Local experts</strong>
+                <p class="small">Decades of experience treating tropical pest challenges in island environments.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="icon" aria-hidden>
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5L4.2 7 12 3.5 19.8 7 12 9.5zM2 17l10 5 10-5v-3.5L12 19 2 13.5V17z"></path></svg>
+              </div>
+              <div>
+                <strong>Safe & effective</strong>
+                <p class="small">We use industry-standard methods and safer product choices, tailored per site.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="icon" aria-hidden>
+                <svg viewBox="0 0 24 24"><path d="M12 2c-.6 0-1 .4-1 1v6H5c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1v-6h6c.6 0 1-.4 1-1s-.4-1-1-1h-6V3c0-.6-.4-1-1-1z"></path></svg>
+              </div>
+              <div>
+                <strong>Transparent pricing</strong>
+                <p class="small">Clear quotes, written treatment plans and preventative advice so you know what to expect.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="cta-block" id="contact">
+          <div class="contact">
+            <div style="font-weight:800;color:var(--green-1)">Get a free onsite inspection & quote</div>
+            <div class="small">Fast response for island homes and resorts — same-day visits available in many areas.</div>
+            <div style="margin-top:8px">Call: <strong>+960 7X-XXXX</strong> &nbsp; • &nbsp; Email: <strong>info@d7g-pest.mv</strong></div>
+          </div>
+          <div style="min-width:320px">
+            <form action="#" method="post" aria-label="Contact form">
+              <input type="text" name="name" placeholder="Full name" required>
+              <input type="text" name="phone" placeholder="Phone or WhatsApp" required>
+              <input type="email" name="email" placeholder="Email (optional)">
+              <input type="text" name="location" placeholder="Island / Resort name" required>
+              <textarea name="message" placeholder="Brief description of issue"></textarea>
+              <div style="display:flex;gap:8px;justify-content:flex-end">
+                <button type="submit" class="btn">Send Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="small">© <strong>D7G Pest Control</strong> — Professional pest management for Maldives communities and resorts.</div>
+      <div class="small">Licence & permits available on request • Service hours: Mon–Sat 08:00–18:00</div>
+    </footer>
+
+  </div>
+</body>
+</html>
